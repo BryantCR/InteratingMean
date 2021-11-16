@@ -47,7 +47,7 @@ heffalumps.west = eeyore;
 let player = {
     location: tigger
 }
-
+/*
 tigger.greet = function(){
     console.log("The wonderful thing about Tiggers is Tiggers are wonderful things!")
 }
@@ -55,8 +55,8 @@ tigger.greet = function(){
 christopherRobins.greet = function(){
     console.log("Pooh is my best friend")
 }
-
-var tiggers = {
+*/
+var tigger = {
 
     character: "Tigger",
     greet: function(){
@@ -65,7 +65,7 @@ var tiggers = {
 
 }; 
 
-var poohs = { 
+var pooh = { 
 
     character: "Winnie the Pooh",
     greet: function(){
@@ -74,7 +74,7 @@ var poohs = {
 
 };
 
-var piglets = {
+var piglet = {
 
     character: "Piglet",
     greet: function(){
@@ -83,7 +83,7 @@ var piglets = {
 
 };
 
-var beess = { 
+var bees = { 
     
     character: "Bees",
     greet: function(){
@@ -92,7 +92,7 @@ var beess = {
     
 };
 
-var christopherRobins = { 
+var christopherRobin = { 
     
     character: "Christopher Robin",
     greet: function(){
@@ -101,7 +101,7 @@ var christopherRobins = {
 
 };
 
-var owls = {
+var owl = {
     
     character: "Owl",
     greet: function(){
@@ -110,7 +110,7 @@ var owls = {
 
 };
 
-var rabbits = {
+var rabbit = {
     
     character: "Rabbit",
     greet: function(){
@@ -119,7 +119,7 @@ var rabbits = {
 
 };
 
-var gophers = {
+var gopher = {
     
     character: "Gopher",
     greet: function(){
@@ -128,7 +128,7 @@ var gophers = {
 
 };
 
-var kangas = {
+var kanga = {
     
     character: "Kanga",
     greet: function(){
@@ -137,7 +137,7 @@ var kangas = {
 
 };
 
-var eeyores = {
+var eeyore = {
     
     character: "Eeyore",
     greet: function(){
@@ -146,7 +146,7 @@ var eeyores = {
     
 };
 
-var heffalumpss = {
+var heffalumps = {
     
     character: "Heffalumps",
     greet: function(){
@@ -165,7 +165,8 @@ function move(input){
         else {
             console.log("You are now at" + " " + player.location[input].character + " " + "house");
             player.location = player.location[input];
-            player.location.greet();
+            let a = player.location;
+            a.greet();
         }
     }
     if(input == "south"){
