@@ -48,6 +48,14 @@ let player = {
     location: tigger
 }
 
+tigger.greet = function(){
+    console.log("The wonderful thing about Tiggers is Tiggers are wonderful things!")
+}
+
+christopherRobins.greet = function(){
+    console.log("Pooh is my best friend")
+}
+
 var tiggers = {
 
     character: "Tigger",
@@ -157,7 +165,7 @@ function move(input){
         else {
             console.log("You are now at" + " " + player.location[input].character + " " + "house");
             player.location = player.location[input];
-            player.location.north.greet();
+            player.location.greet();
         }
     }
     if(input == "south"){
