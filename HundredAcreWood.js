@@ -1,14 +1,67 @@
-let tigger = {character: 'Tigger'}
-let pooh = {character:'Winnie the Pooh'}
-let piglet = {character:'Piglet'}
-let bees = {character:'Bees'}
-let christopherRobin  = {character:'Christopher Robin'}
-let owl = {character:'Owl'}
-let rabbit = {character: 'Rabbit'}
-let gopher = {character: 'Gopher'}
-let kanga ={character: 'Konga'}
-let eeyore = {character:'Eeyore'}
-let heffalumps ={character:'Heffalumps'}
+let tigger = {character: 'Tigger',
+    greet: function(){
+            console.log("The wonderful thing about Tiggers is Tiggers are wonderful things!");
+        }
+}
+
+let pooh = {character:'Winnie the Pooh',
+    greet: function(){
+            console.log("Hello everyone!");
+        }
+}
+
+let piglet = {character:'Piglet',
+    greet: function(){
+            console.log("i love my house");
+        }
+}
+
+let bees = {character:'Bees',
+    greet: function(){
+            console.log("Wiiii!!");
+        }
+}
+
+let christopherRobin  = {character:'Christopher Robin',
+    greet: function(){
+            console.log("Pooh is my best friend");
+        }
+}
+
+let owl = {character:'Owl',
+    greet: function(){
+            console.log("Uuuuuu!");
+        }
+}
+
+let rabbit = {character: 'Rabbit',
+    greet: function(){
+            console.log("Don't bother me");
+        }
+}
+
+let gopher = {character: 'Gopher',
+    greet: function(){
+            console.log("UwU");
+        }
+}
+let kanga ={character: 'Konga',
+    greet: function(){
+            console.log("UnU");
+        }
+}
+let eeyore = {character:'Eeyore',
+    greet: function(){
+            console.log(":v");
+        }
+}
+
+let heffalumps ={character:'Heffalumps',
+    greet: function(){
+            console.log("Life is wonderfull");
+        }
+}
+
 Object = "none";
 
 tigger.north = pooh;
@@ -56,106 +109,6 @@ christopherRobins.greet = function(){
     console.log("Pooh is my best friend")
 }
 */
-var tigger = {
-
-    character: "Tigger",
-    greet: function(){
-        console.log("The wonderful thing about Tiggers is Tiggers are wonderful things!");
-    }
-
-}; 
-
-var pooh = { 
-
-    character: "Winnie the Pooh",
-    greet: function(){
-        console.log("Hello everyone!");
-    }
-
-};
-
-var piglet = {
-
-    character: "Piglet",
-    greet: function(){
-        console.log("i love my house");
-    }
-
-};
-
-var bees = { 
-    
-    character: "Bees",
-    greet: function(){
-        console.log("Wiiii!!");
-    }
-    
-};
-
-var christopherRobin = { 
-    
-    character: "Christopher Robin",
-    greet: function(){
-        console.log("Pooh is my best friend");
-    }
-
-};
-
-var owl = {
-    
-    character: "Owl",
-    greet: function(){
-        console.log("Uuuuuu!");
-    }
-
-};
-
-var rabbit = {
-    
-    character: "Rabbit",
-    greet: function(){
-        console.log("Don't bother me");
-    }
-
-};
-
-var gopher = {
-    
-    character: "Gopher",
-    greet: function(){
-        console.log("UwU");
-    }
-
-};
-
-var kanga = {
-    
-    character: "Kanga",
-    greet: function(){
-        console.log("UnU");
-    }
-
-};
-
-var eeyore = {
-    
-    character: "Eeyore",
-    greet: function(){
-        console.log(":v");
-    }
-    
-};
-
-var heffalumps = {
-    
-    character: "Heffalumps",
-    greet: function(){
-        console.log("Life is wonderfull");
-    }
-    
-};
-
-
 
 function move(input){
     if(input == "north"){
@@ -176,6 +129,8 @@ function move(input){
         else {
             console.log("You are now at" + " " + player.location[input].character + " " + "house");
             player.location = player.location[input];
+            let a = player.location;
+            a.greet();
         }
     }
     if(input == "east"){
@@ -185,6 +140,8 @@ function move(input){
         else {
             console.log("You are now at" + " " + player.location[input].character + " " + "house");
             player.location = player.location[input];
+            let a = player.location;
+            a.greet();
         }
     }
     if(input == "west"){
@@ -194,6 +151,8 @@ function move(input){
         else {
             console.log("You are now at" + " " + player.location[input].character + " " + "house");
             player.location = player.location[input];
+            let a = player.location;
+            a.greet();
         }
     }
     
